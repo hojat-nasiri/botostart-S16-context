@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { UserContext } from "../App";
+import { UserContext } from "../context/UserContext";
 
 // consumer component
 function Form() {

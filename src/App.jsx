@@ -8,14 +8,14 @@ const users = [
   { id: 4, firstName: "Hossein" },
 ];
 
-const UserContext = createContext();
+export const UserContext = createContext();
 
 function App() {
   return (
     <>
       <h1>S16-Context</h1>
 
-      <UserContext.Provider value={users}>
+      <UserContext.Provider value={{ users, author: "Hojat Nasiri" }}>
         <UsersPage />
       </UserContext.Provider>
     </>

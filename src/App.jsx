@@ -15,7 +15,9 @@ function App() {
     <>
       <h1>S16-Context</h1>
 
-      <UsersPage />
+      <UserContext.Provider value={users}>
+        <UsersPage />
+      </UserContext.Provider>
     </>
   );
 }
